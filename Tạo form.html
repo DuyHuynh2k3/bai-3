@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="https://www.w3schools.com/action_page.php"  target="_blank" method="get">
+        <label for="Họ tên đầy đủ">Họ tên:</label><br>
+        <input type="text" id="Họ tên đầy đủ" name="full_name" required><br>
+        <label for="mail">Email:</label><br>
+        <input type="email" id="mail" name="e-mail" required><br>
+        <br>
+        <input type="submit" value="Gửi">
+        
+    </form>
+    <br>
+    <label for="Ghichu">Màu</label>
+    <form action="https://www.w3schools.com/action_page.php"  target="_blank" method="get">
+        <!-- <label for="Màu">Màu</label> -->
+        <label for="Ghichu">Màu</label>
+        <br>
+        <select id="Màu" name="Sắc màu" size="3" multiple>
+            <option value="yellow">màu vàng</option>
+            <option value="red">màu đỏ</option>
+            <option value="green" selected>màu xanh lá</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Gửi">
+    </form>
+
+    <form action="https://www.w3schools.com/action_page.php" method="post">
+        <label for="Ghichu" >Ghi Chú</label>
+        <br>
+        <br>
+        
+
+        <textarea id="Ghichu" name="Nhapvanban"></textarea>
+        <input type="submit" >
+    </form>
+<!-- Form là thẻ block -->
+<!-- button: Là thẻ inline -->
+<!-- TH1 button không nằm trong form thì được hiểu là nút nhấn bình thường, ko submit -->
+    <button >
+        Gửi 1
+    </button>
+<!-- TH2 button không nằm trong form có type="button "thì cũng được hiểu là nút nhấn bình thường, ko submit -->
+    <button type="button">
+        Gửi 2
+    </button>
+<!-- TH3 button nằm trong form không có type="button" thì được hiểu là khi ấn vào button sẽ submit( Để gửi dữ liệu và link sang trang khác)-->
+
+    <form method="POST" action="https://www.w3schools.com/action_page.php">
+        <button >
+        Gửi 3
+        </button>
+    </form>
+<!-- TH4 button nằm trong form có type="button" thì sẽ được hiểu là một nút nhấn bình thường, ấn vào thì không có tác động gì -->
+<form method="POST" action="https://www.w3schools.com/action_page.php">
+      <button type="button">
+        Gửi 4
+    </button>
+</form>
+<!-- TH5 khi ta chèn ảnh vào thẻ button thì ảnh đóng vai trò là 1 button và chức năng thì giống TH3 và TH4-->
+<!--TH a) -->
+<form method="POST" action="https://www.w3schools.com/action_page.php">
+    <button >
+        <img src="http://codegym.vn/wp-content/uploads/2017/03/CodeGym-3-02-copy.jpg">
+    Gửi 5a
+    </button>
+</form>
+<!-- TH b) -->
+<form method="POST" action="https://www.w3schools.com/action_page.php">
+    <button type="button">
+        <img src="http://codegym.vn/wp-content/uploads/2017/03/CodeGym-3-02-copy.jpg">
+    Gửi 5b
+    </button>
+</form>
+<!-- Chú ý: Nếu button không có type="button" mà nằm trong thẻ form sẽ được hiểu là khi ta ấn vào button đó sẽ submit. Nên nếu không có
+đường dẫn để submit link sang trang khác có nghĩa là không có dòng action="đường dẫn" 
+sẽ được báo là "Trang này hiện không hoạt động"-->
+<form method="POST" >
+    <button>
+      Chú ý "Trang này hiện không hoạt động"
+    </button>
+</form>
+</body>
+
+</html>

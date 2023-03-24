@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="slug" onkeyup="ChangeToSlug();">
+    <input type="text" id="convert_slug">
+</body> 
+<script type="text/javascript">
+ 
+    function ChangeToSlug()
+        {
+            var slug;
+            slug = document.getElementById("slug").value;
+            document.getElementById('convert_slug').value = slug;
+        }
+</script>
+</html>
